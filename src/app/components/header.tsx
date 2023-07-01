@@ -12,11 +12,11 @@ const Header: React.FC = () => {
           <Image src="/logo.png" alt="Logo" width={100} height={50} />
           {/* Adjust width and height as needed */}
           <div className="relative ml-8 flex-grow sm:ml-3">
-            <div className="flex items-center border rounded-md border-black">
+            <div className="flex items-center border rounded-md border-black w-full">
               <input
                 type="text"
                 placeholder="Search..."
-                className="px-4 py-2 bg-gray-100 rounded-md focus:outline-none w-full sm:w-96"
+                className="px-4 py-2 rounded-md focus:outline-none w-full sm:w-96"
               />
               {/* Add your search bar */}
               <SearchIcon className="h-5 w-5 text-gray-500 absolute right-2 top-1/2 transform -translate-y-1/2" />
