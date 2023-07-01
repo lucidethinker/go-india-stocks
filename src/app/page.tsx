@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import StockInfo from "./components/stockinfo";
 import featuredCompanies from "../../public/feaured";
+import Drawer from "./components/drawyer";
 
 export default function Home() {
   return (
@@ -21,7 +22,9 @@ export default function Home() {
         </div>
       </div>
       <div className="flex">
-        <div className="w-1/3 h-screen bg-gray-200"></div>
+        <div className="w-1/3 h-screen bg-gray-200">
+          <Drawer />
+        </div>
         <div className="w-1/3 h-screen bg-gray-300">Middle Content</div>
         <div className="w-1/3 h-screen bg-gray-400">Right Content</div>
       </div>
