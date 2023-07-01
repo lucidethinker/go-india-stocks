@@ -13,7 +13,7 @@ export default function Drawer() {
     <div className="flex">
       <div className="relative">
         <button
-          className="bg-gray-500 text-white p-2 rounded-full absolute top-2 left-2 z-10"
+          className="bg-blue-900 text-white p-2 rounded-full absolute top-2 left-2 z-10"
           onClick={toggleDrawer}
         >
           {isOpen ? (
@@ -23,7 +23,7 @@ export default function Drawer() {
           )}
         </button>
         <div
-          className={`bg-gray-200 w-60 h-screen fixed top-0 left-0 transition-transform duration-300 transform ${
+          className={`bg-blue-900 flex flex-col w-full h-screen p-20 top-0 left-0 transition-transform duration-300 transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
