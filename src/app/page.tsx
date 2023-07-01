@@ -15,12 +15,15 @@ export default function Home() {
           {/* Add your featured companies here */}
           {featuredCompanies.map((company, index) => (
             <div key={index} className="flex items-center  ">
-              <img src={company.logo} className="w-50 h
-              
-              -30 mr-4" />
+              <img src={company.logo} className="w-50 h-30 mr-4" />
             </div>
           ))}
         </div>
+      </div>
+      <div className="flex">
+        <div className="w-1/3 h-screen bg-gray-200"></div>
+        <div className="w-1/3 h-screen bg-gray-300">Middle Content</div>
+        <div className="w-1/3 h-screen bg-gray-400">Right Content</div>
       </div>
     </div>
   );
